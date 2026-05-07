@@ -29,14 +29,16 @@ int main()
         printf("Sunday\n");
         break;
 
+    // default is optional ,  we can write break before case 1 also
     default:
+        printf("No day\n");
         break;
     }
 
 
     // nested switch case
     int outer = 1;
-    char inner = 'A';
+    char inner = 'B';
 
     switch (outer) {
         case 1:
