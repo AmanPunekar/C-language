@@ -95,29 +95,47 @@ int main()
     // }
 
     // for inverted V
-    for (int i = 1; i <= n; i++)
-    {
-        // Left spaces
-        for (int j = 1; j <= n - i; j++)
-        {
-            printf("  ");
-        }
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     // Left spaces
+    //     for (int j = 1; j <= n - i; j++)
+    //     {
+    //         printf("  ");
+    //     }
 
-        // Stars and middle spaces
-        for (int j = 1; j <= 2 * i - 1; j++)
+    //     // Stars and middle spaces
+    //     for (int j = 1; j <= 2 * i - 1; j++)
+    //     {
+    //         if (j == 1 || j == 2 * i - 1)
+    //         {
+    //             printf("* ");
+    //         }
+    //         else
+    //         {
+    //             printf("  ");
+    //         }
+    //     }
+
+    //     printf("\n");
+    // }
+
+    // for X:
+
+    for (int i = 1; i < 2 * n; i++)
+    {
+        for (int j = 1; j < 2 * n; j++)
         {
-            if (j == 1 || j == 2 * i - 1)
+            if (i == j || i + j == 2 * n)
             {
-                printf("* ");
+                printf("*");
             }
             else
             {
-                printf("  ");
+                printf(" ");
             }
         }
 
         printf("\n");
     }
-
     return 0;
 }
