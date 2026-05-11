@@ -8,15 +8,17 @@ int main()
     printHellow(5);
     return 0;
 }
-
+// recursive function
 void printHellow(int n)
 {
-
+    // base case
     if (n == 0)
     {
         return; // because print stop at zero.
     }
 
-    printf("Hellow %d\n", n);
+    printf("Hello %d\n", n);
+
+    // recursive call
     printHellow(n - 1);
 };
